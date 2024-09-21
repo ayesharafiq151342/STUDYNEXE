@@ -40,7 +40,7 @@ const Carousel = () => {
         <div className="w-full text-center animate-text">
           <h1 className="text-5xl font-bold mb-6 text-white">Your Study Abroad Partner</h1>
           <p className="text-lg text-gray-200 mb-4">
-  Gohata Global welcomes you with the promise of competence, integrity and professionalism and makes sure your steppingstone is in the right direction..
+Study nexe welcomes you with the promise of competence, integrity and professionalism and makes sure your steppingstone is in the right direction..
           </p>
           <button className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-md text-lg">
             Learn More

@@ -1,105 +1,53 @@
 import React from 'react';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import logo from './images/logo.png'; 
 
 const ContactSection = () => {
-    
-const offices = [
-    {
-      location: "MRC DHA HeadOffice",
-      address: "1st Floor, 18-Z, Commercial Areas, Phase III, D.H.A, Lahore, Pakistan 54810",
-      phone: "+92 321-4849999",
-      email: "info@mrcconsultants.org",
-    },
-    {
-      location: "MRC Faisal Town",
-      address: "19-D, Faisal Town, Lahore, Pakistan 54700",
-      phone: "+92 300-0602988",
-      email: "hannan.mubashar@mrcconsultants.org",
-    },
-    {
-      location: "MRC Gulberg",
-      address: "First floor Centro 81- A, MM Alam Rd, Block B2, Gulberg III, Lahore",
-      phone: "+92 320-4801111",
-      email: "hasnain@mrcconsultants.org",
-    },
-    {
-      location: "MRC Faisalabad",
-      address: "Sethi Plaza, P-703 ,B1-Corner, Batala Colony, Main Satayana Road, Faisalabad",
-      phone: "+92 309-8883516",
-      email: "yousaf.saleem@mrcconsultants.org",
-    },
-    {
-      location: "MRC Multan",
-      address: "23/3 Officers Colony Bosan Road Multan",
-      phone: "+92 301 6989999",
-      email: "shahzaib.baloch@mrcconsultants.org",
-    },
-    {
-      location: "MRC Islamabad",
-      address: "Office #1 Floor#1 Block 6B F-6 Markaz, Islamabad, Pakistan",
-      phone: "+92 307-3309999",
-      email: "raja.adeel@mrcconsultants.org",
-    },
-    {
-      location: "MRC Dubai",
-      address: "Office # 3111, Single Business Tower, Business Bay, Dubai, UAE, PO BOX: 36677",
-      phone: "+971 56 224 9311",
-      email: "info@mrcconsultants.org",
-    },
-    {
-      location: "MRC Bahawalpur",
-      address: "1st Floor Jhandeer Plaza Model Road Near 4 Season Restaurant Model Town A Bahawalpur",
-      phone: "+92-302-5029895",
-      email: "info@mrcconsultants.org",
-    },
-    {
-      location: "MRC Rahim Yar Khan",
-      address: "Abbassia Town Rahim Yar Khan Postal Code 64200",
-      phone: "+92-301-5341408",
-      email: "info@mrcconsultants.org",
-    },
-    {
-      location: "MRC Karachi",
-      address: "Plot 13-C, Office No.201, 2nd Floor, Main Khayaban e Badar, DHA Phase V, Karachi, 75500",
-      phone: "+92 300 0304543",
-      email: "rahila@mrcconsultants.org",
-    }
-  ];
   return (
-    <div className="bg-purple-700 text-white py-10 px-5">
-      <h1 className="text-4xl font-bold text-center mb-8">Our Offices</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {offices.map((office, index) => (
-          <div key={index} className="p-6 bg-purple-800 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold mb-2">{office.location}</h2>
-            <p className="mb-1"><strong>Address: </strong>{office.address}</p>
-            <p className="mb-1"><strong>Phone: </strong>{office.phone}</p>
-            <p className="mb-1"><strong>Email: </strong>{office.email}</p>
+    <section className="bg-purple-700 text-white py-12">
+      <div className="container mx-auto px-6">
+        {/* Flex container for the left (icons) and right (cards) */}
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+          
+          {/* Left: Social Icons */}
+          <div className="text-center md:text-left mb-6 md:mb-0 md:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <p className="mb-6 text-gray-300">
+              StudyNex welcomes you with the promise of competence, integrity, and professionalism, ensuring your stepping stone is in the right direction.
+            </p>
+            {/* Social Media Icons */}
+            <div className="flex justify-center md:justify-start space-x-4">
+              <a href="https://instagram.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://pinterest.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </div>
           </div>
-        ))}
-      </div>
-
-      {/* Social Media Section */}
-      <div className="mt-10 text-center">
-        <h3 className="text-2xl font-semibold mb-4">Follow us on social media</h3>
-        <div className="flex justify-center space-x-5">
-          <a href="#" className="text-white">
-            {/* Insert FontAwesome or any social media icon here */}
-            <i className="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="#" className="text-white">
-            <i className="fab fa-instagram fa-2x"></i>
-          </a>
-          <a href="#" className="text-white">
-            <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="#" className="text-white">
-            <i className="fab fa-tiktok fa-2x"></i>
-          </a>
+    
+          {/* Right: Contact Cards */}
+          <div className="flex flex-col md:flex-row md:w-1/2 space-y-4 md:space-y-0 md:space-x-8">
+            {/* Dribbble */}
+            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center">
+              <i className="fab fa-dribbble text-2xl text-white"></i>
+              <p className="ml-4">dribbble.com/example</p>
+            </div>
+            {/* Email */}
+            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center">
+              <i className="fas fa-envelope text-2xl text-white"></i>
+              <p className="ml-4">contact@example.com</p>
+            </div>
+          </div>
         </div>
-        <p className="mt-4">Leave your Feedback</p>
       </div>
-    </div>
+    </section>
   );
 };
 

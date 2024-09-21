@@ -29,6 +29,8 @@ import can from './images/ca.svg'
 import ceo from './images/ceo.jfif'
 import Director from './images/director.jfif'
 import ContactSection from './footor'; // Ensure ContactSection is exported as default
+import Carousel from './carousel';
+
 const images = [
   image1,
   image2,
@@ -49,8 +51,12 @@ const images = [
 ];
 
 const LogoSlider = () => {
+  
   return (
-<>
+   
+<> 
+
+<Carousel/>
 <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn'>
   Study Abroad <span className='text-purple-700'>Consultants</span>
 </h1>
@@ -101,7 +107,7 @@ const LogoSlider = () => {
 
    
       <div> 
-      <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn '>Our Partner <span className=' text-purple-700'>Universities</span> </h1></div>
+      <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn '>Universities Around <span className=' text-purple-700'>  The Would</span> </h1></div>
       <div className="slider ">
         <div className="slide-track mt-20">
           {/* Duplicate slides for seamless looping */}
@@ -155,7 +161,7 @@ const LogoSlider = () => {
 
   {/* CEO Section */}
   <div className="flex flex-col mt-10 md:flex-row items-center mb-12 w-full md:w-3/4">
-    <div className="w-46 h-46 md:w-64 md:h-52 mb-46 md:mb-0 md:mr-8">
+    <div className="w-40 h-40 md:w-64 md:h-52 mb-46 md:mb-0 md:mr-8">
       <img
         src={ceo}
         alt="CEO"
@@ -193,8 +199,8 @@ const LogoSlider = () => {
     </div>
   </div>
 </div>
+<ContactSection />
 
-<ContactSection/>
 </>
 
      

@@ -26,7 +26,7 @@ import usvg from './images/us.svg';
 import uae from './images/uaetes.svg.png';
 import ausvg from './images/au.svg';
 import can from './images/ca.svg'
-import ceo from './images/ceo.jfif'
+import ceo from './images/ceoimage.jpeg'
 import Director from './images/director.jfif'
 import ContactSection from './footor'; // Ensure ContactSection is exported as default
 import Carousel from './carousel';
@@ -60,14 +60,13 @@ const LogoSlider = () => {
 <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn'>
   Study Abroad <span className='text-purple-700'>Consultants</span>
 </h1>
-
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
   {/* United Kingdom */}
   <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
     <img src={gb} alt="United Kingdom" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
     <h3 className="text-lg font-semibold">United Kingdom</h3>
     <p className="text-gray-600 mt-2">The United Kingdom remains a premier destination for international students, hosting over 500,000+ students. Renowned for dynamic courses and integrated learning systems, the UK offers a rich educational experience.</p>
-    <a href="#" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
+    <a href="./uk.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
   </div>
 
   {/* United States */}
@@ -75,7 +74,15 @@ const LogoSlider = () => {
     <img src={usvg} alt="United States" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
     <h3 className="text-lg font-semibold">United States</h3>
     <p className="text-gray-600 mt-2">The United States is known for its world-renowned universities, top-ranking institutions like MIT and diverse culture. The country's 4,000 accredited centers, including Ivy League and Harvard, make it a prime choice.</p>
-    <a href="#" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
+    <a href="./u.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
+  </div>
+
+  {/* Canada */}
+  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
+    <img src={can} alt="Canada" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
+    <h3 className="text-lg font-semibold">Canada</h3>
+    <p className="text-gray-600 mt-2">Canada is another top choice for global students, offers excellent education, high standard living, and working opportunities. Notably, three Canadian cities—Toronto, Vancouver, and Montreal—feature in the top 20 Best Student Cities.</p>
+    <a href="./Canada.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
   </div>
 
   {/* Australia */}
@@ -83,77 +90,78 @@ const LogoSlider = () => {
     <img src={ausvg} alt="Australia" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
     <h3 className="text-lg font-semibold">Australia</h3>
     <p className="text-gray-600 mt-2">Australia, ranked as the 12th happiest country in the world (Prosperity Index), and has 37 top universities and out of those 37, six of them are in the prestigious top 100. This adds to its popularity as a favored study-abroad destination.</p>
-    <a href="#" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
-
-  {/* Canada */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={can} alt="Canada" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">Canada</h3>
-    <p className="text-gray-600 mt-2">Canada, is another top choice for global students, offers excellent education, high standard living, and working opportunities. Notably, three Canadian cities—Toronto, Vancouver, and Montreal—feature in the top 20 Best Student Cities.</p>
-    <a href="#" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
+    <a href="./Australia.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
   </div>
 
   {/* United Arab Emirates */}
   <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
     <img src={uae} alt="United Arab Emirates" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
     <h3 className="text-lg font-semibold">United Arab Emirates</h3>
-    <p className="text-gray-600 mt-2">The UAE offers world-class education with advanced facilities, attracting students globally. Its universities provide diverse cultural experiences. Study in a dynamic, innovative environment.State-of-the-art facilities, and multicultural experiences.</p>
-    <a href="#" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
+    <p className="text-gray-600 mt-2">The UAE offers world-class education with advanced facilities, attracting students globally. Its universities provide diverse cultural experiences. Study in a dynamic, innovative environment.</p>
+    <a href="./UAE.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
   </div>
 </div>
 
+<div>
+  <h1 className="text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn">Universities Around <span className="text-purple-700">The World</span></h1>
+</div>
 
-
-   
-      <div> 
-      <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn '>Universities Around <span className=' text-purple-700'>  The Would</span> </h1></div>
-      <div className="slider ">
-        <div className="slide-track mt-20">
-          {/* Duplicate slides for seamless looping */}
-          {Array.from({ length: 14 }).map((_, index) => (
-            <div className="slide" key={index}>
-              <img
-                src={images[index % images.length]} // Corrected here
-                height="100"
-                width="250"
-                alt={`Slide ${index + 1}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div> <div>
+<div className="slider overflow-hidden relative mt-20">
+  <div className="slide-track flex space-x-4">
+    {/* Duplicate slides for seamless looping */}
+    {Array.from({ length: 14 }).map((_, index) => (
+      <div className="slide flex-shrink-0 w-40" key={index}>
+        <img
+          src={images[index % images.length]}
+          height="100"
+          width="250"
+          alt={`Slide ${index + 1}`}
+          className="w-full h-auto"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+ <div>
         <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-18 text-black animate-slideIn '>Our  <span className=' text-purple-700'>Services</span> </h1>
         <p className='text-center mt-5 '>From applying to a university to securing your study visa, Gohata Global is there for you</p>
       </div>
-      <div className=" container  mx-auto p-6">
+      <div className="container mx-auto p-6">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:ml-52 lg:mt-20 gap-6">
-    <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
+    
+    {/* Career Counselling */}
+    <a href="./Career_Counseling.js" className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
       <img src={servicesimage1} alt="Career Counselling" className="w-16 h-16 mb-4"/>
       <h3 className="text-lg font-semibold text-center text-gray-900 hover:text-white">Career <br/> Counselling</h3>
-    </div>
+    </a>
 
-    <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
+    {/* Admissions Processing */}
+    <a href="./Adm_Pro.js" className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
       <img src={servicesimage2} alt="Admissions Processing" className="w-16 h-16 mb-4"/>
       <h3 className="text-lg font-semibold text-center text-gray-900 hover:text-white">Admissions Processing</h3>
-    </div>
+    </a>
 
-    <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
+    {/* Scholarship Applications */}
+    <a href="./scholar_app.js" className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
       <img src={servicesimage3} alt="Scholarship Applications" className="w-16 h-16 mb-4"/>
       <h3 className="text-lg font-semibold text-center text-gray-900 hover:text-white">Scholarship Applications</h3>
-    </div>
+    </a>
 
-    <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
+    {/* Interview Preparation */}
+    <a href="./inter_p.js" className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
       <img src={servicesimage4} alt="Interview Preparation" className="w-16 h-16 mb-4"/>
       <h3 className="text-lg font-semibold text-center text-gray-900 hover:text-white">Interview <br/> Preparation</h3>
-    </div>
+    </a>
 
-    <div className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
+    {/* Language Preparation */}
+    <a href="./its.js" className="bg-white shadow-md p-6 rounded-lg flex flex-col items-center hover:bg-purple-700 transition-colors duration-300">
       <img src={servicesimage5} alt="Language Preparation" className="w-16 h-16 mb-4"/>
       <h3 className="text-lg font-semibold text-center text-gray-900 hover:text-white">Language Preparation</h3>
-    </div>
+    </a>
+
   </div>
 </div>
+
 <div className="flex flex-col items-center my-10">
   <h1 className="text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-18 text-black animate-slideIn">
     The Dream <span className="text-purple-700">Team</span>
@@ -174,6 +182,7 @@ const LogoSlider = () => {
       <p className="text-sm sm:mx-2  ml-8 mr-8 text-justify">
   Our CEO, Hamaza, has been the guiding force behind our firm's success. His vision and leadership have inspired growth and innovation at every step. With his nurturing approach, Hamaza has not only built partnerships but also fostered trust and excellence.
 </p>
+
 
     </div>
   </div>
@@ -207,9 +216,4 @@ const LogoSlider = () => {
       
   );
 };
-
-
-
-
-
-export default LogoSlider;
+export default LogoSlider

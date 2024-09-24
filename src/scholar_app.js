@@ -2,10 +2,10 @@
 import React from "react";
 import ContactSection from "./footor";
 import bgimage from './images/page-title.jpg';
-import counsling from './images/cansouling1.jpg';
-import counsling2 from './images/caounsling2.jpg';
+import counsling from './images/sc-app.webp';
+import counsling2 from './images/sdas.webp';
 
-const CareerCounseling = () => {
+const ScholarshipProcess = () => {
   return (
     <>
       {/* Background Section */}
@@ -28,7 +28,7 @@ const CareerCounseling = () => {
 </div>
 
 
-
+    
      
 <div className="bg-white  mt-24 md:mt-28 xl:md-28 px-4 sm:px-6 lg:px-8">
   {/* Our Mission Section */}
@@ -36,19 +36,19 @@ const CareerCounseling = () => {
     {/* Left Text Section */}
     <div className="flex flex-col justify-center md:order-1">
       <h2 className="text-3xl mb-10 font-extrabold text-gray-900 sm:text-4xl">
-      Career  <span className='text-purple-700'>Counseling</span>
+      Scholarship  <span className='text-purple-700'>Opportunities</span>
       </h2>
       <p className="mb-4 text-lg text-gray-600">
-      At Studynex, we provide expert career counseling to help students navigate their future careers. Our experienced counselors offer personalized guidance and actionable advice to ensure that you can achieve your academic and professional goals.
+      At StudyNex, we are committed to helping you discover and apply for scholarships that match your academic and career aspirations. Our team provides expert guidance to simplify the scholarship process.
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Why Choose Us for Admissions?</h2>
       <ul className="list-disc list-inside mb-4">
-      <li>Expert advice tailored to your needs</li>
-              <li>Help in identifying your career goals</li>
-              <li>Support in making educational and career decisions</li>
-              <li>Access to a network of professionals</li>
-           </ul>
+      <li>Thorough evaluation of your academic and financial needs</li>
+              <li>Assistance in selecting the right scholarship opportunities</li>
+              <li>Guidance on preparing scholarship applications, essays, and recommendations</li>
+              <li>Support with deadlines, document organization, and follow-ups</li>
+            </ul>
     </div>
 
     {/* Right Image Section (Mobile Above Text) */}
@@ -69,16 +69,17 @@ const CareerCounseling = () => {
         Our <span className='text-purple-700'>Goal</span>
       </h2>
       <p className="mb-4 text-lg text-gray-600">
-      Our goal is to empower students with the tools they need to succeed in their chosen career paths. With our services, you will gain insights into different career options, get help with application processes, and receive ongoing support throughout your journey.
-      </p>
+      Our goal is to make the scholarship application process smooth and accessible, helping you secure the financial support needed to achieve your educational dreams.
+       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Our Admissions Services Include:</h2>
       <ul className="list-disc list-inside mb-4">
       <li>One-on-one counseling sessions</li>
-              <li>Resume building and interview preparation</li>
-              <li>Access to career exploration tools</li>
-              <li>Guidance on educational programs and scholarships</li>
-          </ul>
+      <li>One-on-one consultations to match you with the best scholarship options</li>
+              <li>Help with crafting strong application materials</li>
+              <li>Guidance on scholarship interviews and follow-up strategies</li>
+              <li>Assistance with financial aid and grant applications</li>
+              </ul>
     </div>
 
     {/* Left Image Section (Mobile Above Text) */}
@@ -91,11 +92,9 @@ const CareerCounseling = () => {
     </div>
   </div>
 </div>
-
-
-    <ContactSection/>
+  <ContactSection/>
     </>
   );
 };
 
-export default CareerCounseling;
+export default ScholarshipProcess;

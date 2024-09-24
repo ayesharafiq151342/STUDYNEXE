@@ -2,12 +2,13 @@
 import React from "react";
 import ContactSection from "./footor";
 import bgimage from './images/page-title.jpg';
-import counsling from './images/cansouling1.jpg';
-import counsling2 from './images/caounsling2.jpg';
+import counsling from './images/image_2.jpg (1).webp';
+import counsling2 from './images/sdas.webp';
 
-const CareerCounseling = () => {
+const VisaApplication = () => {
   return (
     <>
+
       {/* Background Section */}
       <div
   className="relative w-full h-96 bg-cover bg-center flex items-center justify-start pl-4 md:pl-8 lg:pl-16" // Adjusted padding for responsiveness
@@ -28,27 +29,25 @@ const CareerCounseling = () => {
 </div>
 
 
-
-     
 <div className="bg-white  mt-24 md:mt-28 xl:md-28 px-4 sm:px-6 lg:px-8">
   {/* Our Mission Section */}
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Text Section */}
     <div className="flex flex-col justify-center md:order-1">
       <h2 className="text-3xl mb-10 font-extrabold text-gray-900 sm:text-4xl">
-      Career  <span className='text-purple-700'>Counseling</span>
+      Visa  <span className='text-purple-700'>Application</span>
       </h2>
       <p className="mb-4 text-lg text-gray-600">
-      At Studynex, we provide expert career counseling to help students navigate their future careers. Our experienced counselors offer personalized guidance and actionable advice to ensure that you can achieve your academic and professional goals.
-      </p>
+      At StudyNex, we provide expert guidance through the visa application process to help students and professionals achieve their international education and career goals. Our team offers personalized support and practical advice to ensure you make informed decisions at every step of the process.
+</p>
 
       <h2 className="text-2xl font-semibold mb-3">Why Choose Us for Admissions?</h2>
       <ul className="list-disc list-inside mb-4">
-      <li>Expert advice tailored to your needs</li>
-              <li>Help in identifying your career goals</li>
-              <li>Support in making educational and career decisions</li>
-              <li>Access to a network of professionals</li>
-           </ul>
+      <li>Comprehensive evaluation of your visa eligibility and requirements</li>
+              <li>Help with preparing necessary documentation and forms</li>
+              <li>Guidance on interview preparation and potential questions</li>
+              <li>Support in tracking application status and responding to inquiries</li>
+    </ul>
     </div>
 
     {/* Right Image Section (Mobile Above Text) */}
@@ -69,16 +68,16 @@ const CareerCounseling = () => {
         Our <span className='text-purple-700'>Goal</span>
       </h2>
       <p className="mb-4 text-lg text-gray-600">
-      Our goal is to empower students with the tools they need to succeed in their chosen career paths. With our services, you will gain insights into different career options, get help with application processes, and receive ongoing support throughout your journey.
+        Our goal is to streamline the admissions process for you by offering tailored advice, helping you navigate various steps, and providing support as you transition from high school to higher education. We ensure that your application stands out.
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Our Admissions Services Include:</h2>
       <ul className="list-disc list-inside mb-4">
-      <li>One-on-one counseling sessions</li>
-              <li>Resume building and interview preparation</li>
-              <li>Access to career exploration tools</li>
-              <li>Guidance on educational programs and scholarships</li>
-          </ul>
+        <li>Personalized one-on-one consultations to outline the admissions timeline</li>
+        <li>Support with building a compelling application portfolio</li>
+        <li>Guidance on financial aid and scholarship applications</li>
+        <li>Post-application follow-up and interview preparation</li>
+      </ul>
     </div>
 
     {/* Left Image Section (Mobile Above Text) */}
@@ -93,9 +92,9 @@ const CareerCounseling = () => {
 </div>
 
 
-    <ContactSection/>
+      <ContactSection />
     </>
   );
 };
 
-export default CareerCounseling;
+export default VisaApplication;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from './images/logo.png'; 
+
 
 const ContactSection = () => {
   return (
@@ -17,32 +17,28 @@ const ContactSection = () => {
             </p>
             {/* Social Media Icons */}
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="https://instagram.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+              <a href="https://www.instagram.com/studynex.pk?igsh=MTYzNDRjY2Uyd3YxeQ%3D%3D" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com/in/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://pinterest.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
+              
+              <a href="https://www.facebook.com/StudyNexConsultants?mibextid=ZbWKwL" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
                 <i className="fab fa-facebook"></i>
               </a>
-              <a href="https://twitter.com/yourprofile" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
-                <i className="fab fa-twitter"></i>
-              </a>
+              
             </div>
           </div>
     
           {/* Right: Contact Cards */}
           <div className="flex flex-col md:flex-row md:w-1/2 space-y-4 md:space-y-0 md:space-x-8">
             {/* Dribbble */}
-            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center">
+            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center md:w-1/2">
               <i className="fab fa-dribbble text-2xl text-white"></i>
-              <p className="ml-4">dribbble.com/example</p>
+              <p className="ml-4">Studynexconsultancy@gmail.com</p>
             </div>
             {/* Email */}
-            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center">
+            <div className="bg-purple-900 p-6 rounded-lg shadow-lg flex items-center md:w-1/2">
               <i className="fas fa-envelope text-2xl text-white"></i>
-              <p className="ml-4">contact@example.com</p>
+              <p className="ml-4 text-sm">+92 339 4024867</p>
             </div>
           </div>
         </div>

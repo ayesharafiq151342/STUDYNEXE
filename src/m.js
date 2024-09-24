@@ -40,20 +40,24 @@ const MissionAboutUs = () => {
 
   return (<>
 
-    <div
-      className="relative w-full h-96 bg-cover bg-center flex items-center justify-start pl-8" // Changed justify-center to justify-start and added padding-left (pl-8) to move the text to the left
-      style={{ backgroundImage: `url(${bgimage})` }} // Correct syntax for backgroundImage
-    >
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-purple-900 opacity-50"></div>
+<div
+  className="relative w-full h-96 bg-cover bg-center flex items-center justify-start pl-4 md:pl-8 lg:pl-16" // Adjusted padding for responsiveness
+  style={{ backgroundImage: `url(${bgimage})` }} // Correct syntax for backgroundImage
+>
+  {/* Background Overlay */}
+  <div className="absolute inset-0 bg-purple-900 opacity-80"></div>
 
-      {/* Mission Content */}
-      <div className="relative flex flex-col items-start justify-center h-full z-10"> {/* Changed justify-center to justify-start */}
-        <h1 className="text-white text-4xl font-bold md:ml-52">      StudyNex</h1>
-        <p className="text-white mt-4  md:ml-52 text-lg max-w-md">
-          welcomes you with the promise of competence, integrity and professionalism and makes sure your steppingstone is in the right direction.     </p>
-      </div>
-    </div>
+  {/* Mission Content */}
+  <div className="relative flex flex-col items-start justify-center h-full z-10">
+    <h1 className="text-white  text-start text-3xl md:text-4xl lg:text-5xl font-bold  lg:ml-9"> {/* Responsive text size */}
+      StudyNex
+    </h1>
+    <p className="text-white mt-2 md:mt-4 text-base md:text-lg lg:max-w-md lg:ml-10"> {/* Responsive text size and margin */}
+      welcomes you with the promise of competence, integrity, and professionalism, ensuring your steppingstone is in the right direction.
+    </p>
+  </div>
+</div>
+
 
     {/* Carousel Controls */}
     <div className="absolute inset-y-0 right-0 flex items-center pr-4">
@@ -110,22 +114,7 @@ const MissionAboutUs = () => {
       {/* Grid layout with 2 columns */}
 
     </div> 
-    <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn'>
-      Start your Learning <span className='text-purple-700'>Journey Today!</span>
-    </h1>
-    <div className="flex flex-row space-x-6  h-64 items-center justify-center bg-purple-700">
-      {features.map((feature) => (
-        <div
-          key={feature.id}
-          className="flex flex-col h-32 justify-center bg-white items-center space-y-4 p-4 rounded-lg hover:bg-purple-700  transition duration-300"
-        >
-          <img src={feature.icon} alt={feature.title} className="w-16 h-16" />
-          <div className="text-center">
-            <h3 className="text-lg font-semibold text-gray-900  hover:text-white">{feature.title}</h3>
-          </div>
-        </div>
-      ))}
-    </div>
+   
     <div className="container mx-auto px-4 py-20">
 
 {/* Header Section */}

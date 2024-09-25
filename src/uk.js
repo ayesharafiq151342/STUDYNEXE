@@ -2,7 +2,7 @@ import React from "react";
 import bgimage from './images/UK.webp';
 import ContactSection  from "./footor";
 import botm from './images/uk-bottom-1.webp'
-const StudyInUk = () => {
+const StudyInUK = () => {
   return (
     <div className="bg-gray-50">
       {/* Header Section */}
@@ -12,7 +12,7 @@ const StudyInUk = () => {
         <img
           src={bgimage}
           alt="Statue of Liberty"
-          className="w-54 h-[400px] object-cover rounded  m-auto"
+          className="w-full h-[400px] object-cover rounded  m-auto"
         />
         <div className="absolute inset-0 "></div>
        
@@ -65,6 +65,7 @@ const StudyInUk = () => {
           </div>
         </div>
       </section>
+
       <section
   className="relative h-[700px] bg-cover bg-center"
   style={{
@@ -89,14 +90,11 @@ const StudyInUk = () => {
       </a>
     </div>
   </div>
-</section>
-
-
-      <ContactSection />
+</section>   <ContactSection />
   
     </div>
 
   );
 };
 
-export default StudyInUk;
+export default StudyInUK;

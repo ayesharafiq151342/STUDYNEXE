@@ -35,8 +35,8 @@ const services = [
     link:'/inter_p.js',
   },
   {
-    title: 'IELTS Coaching',
-    description: 'Studynex company offers IELTS Coaching training to help students prepare for various interviews and exams.',
+    title: 'IELTS   & PTE Coaching',
+    description: 'Studynex company offers IELTS  & PTE Coaching training to help students prepare for various interviews and exams.',
     image: service5,
     link: '/its.js',
   },

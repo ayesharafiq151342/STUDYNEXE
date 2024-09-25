@@ -1,20 +1,24 @@
 import React from "react";
-import bgimage from './images//pexels-kiran-raj-1262380-3581162.jpg'; // Update this with a relevant image for the UAE
+import bgimage from './images/uae9.jpg'; // Update this with a relevant image for the UAE
 import ContactSection from "./footor";
-import './paralex.css'
+
 const StudyInUAE = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="relative">
-        <img
-          src={bgimage}
-          alt="Statue of Liberty"
-          className=" w-3/4 h-[400px] object-cover rounded  m-auto"
-        />
-        <div className="absolute inset-0 "></div>
-       
-      </section>
+  <img
+    src={bgimage}
+    alt="Statue of Liberty"
+    className="w-full h-[400px] object-cover rounded m-auto"
+  />
+  <div className="absolute inset-0 bg-black opacity-30"></div> {/* Optional overlay for better text contrast */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    {/* You can add any text or other content here */}
+
+  </div>
+</section>
+
       <div className="bg-white py-16 px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-black font-bold text-3xl md:text-4xl mt-2">

@@ -24,7 +24,13 @@ const ContactSection = () => {
               <a href="https://www.facebook.com/StudyNexConsultants?mibextid=ZbWKwL" className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200">
                 <i className="fab fa-facebook"></i>
               </a>
-              
+              <a 
+  href="mailto:hamza.sadiq@studynex.co" // Replace with your email address
+  className="bg-purple-500 p-2 rounded-full hover:bg-purple-600 transition duration-200"
+>
+  <i className="fas fa-envelope"></i> {/* Font Awesome envelope icon for email */}
+</a>
+
             </div>
           </div>
     

@@ -86,8 +86,14 @@ const Navbar = () => {
                   >
                   United Arab Emirates
 
+                  </Link>        <Link
+                    to="/Fi_land.js"
+                    className={`block px-4 py-2 text-sm ${isActiveCountry('   /Fi_land.js') ? 'bg-purple-600 text-white' : 'text-black hover:bg-purple-600 hover:text-white'}`}
+                  >
+                  Failand
+
                   </Link>
-                  
+               
                 </div>
               )}
             </div>
@@ -171,7 +177,14 @@ const Navbar = () => {
                   United Arab Emirates
 
                   </Link>
-                  
+                  <Link
+                    to="/Fi_land.js"
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/Fi_land.js') ? 'bg-purple-600 text-white' : 'text-black hover:bg-purple-600 hover:text-white'}`}
+                  >
+                  Failand
+
+                  </Link>
+               
                 </div>
               )}
             </div>
@@ -180,6 +193,7 @@ const Navbar = () => {
             <Link to="/Contact.js" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact') ? 'bg-purple-600 text-white' : 'text-black hover:bg-purple-600 hover:text-white'}`}>
               Contact
             </Link>
+            
           </div>
         </div>
       )}

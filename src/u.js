@@ -12,7 +12,7 @@ const StudyInUS = () => {
         <img
           src={bgimage}
           alt="Statue of Liberty"
-          className="w-54 h-[400px] object-cover rounded  m-auto"
+          className="w-full h-[400px] object-cover rounded  m-auto"
         />
         <div className="absolute inset-0 "></div>
        

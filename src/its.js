@@ -18,13 +18,13 @@ const IELTSPage = () => {
       </p>
     </div>
   </div>
-  <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-10 mb-20 text-black animate-slideIn '>IELTS   <span className=' text-purple-700'>Coaching</span> </h1>  <div className="container mx-auto p-8">
+  <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-10 mb-20 text-black animate-slideIn '>IELTS   & PTE <span className=' text-purple-700'>Coaching</span> </h1>  <div className="container mx-auto p-8">
       
       {/* IELTS Overview Section */}
       <section className="mb-12 flex flex-col md:flex-row items-center">
   {/* Left Side: Text Content */}
   <div className="md:w-1/2 mb-6 md:mb-0">
-    <h2 className="text-2xl font-bold mb-4">IELTS Overview</h2>
+    <h2 className="text-2xl font-bold mb-4">IELTS  & PTE Overview</h2>
     <p className="mb-4 mr-20 text-gray-600 text-justify">
       Despite the momentary allure, StudyNex company helps students focus on their goals and overcome obstacles with personalized coaching and guidance.
     </p>
@@ -58,7 +58,7 @@ const IELTSPage = () => {
       <li>Study Material Included</li>
       <li>Access to Recorded Sessions</li>
     </ul>
-    <p className="text-xl font-bold">$75.99</p>
+    <p className="text-xl font-bold">Rs. 20,000 PKR</p>
     <button className="mt-4 bg-purple-700 text-white py-2 px-4 rounded-lg hover:bg-purple-500">
 Contact us
     </button>

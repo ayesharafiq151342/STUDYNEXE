@@ -37,7 +37,7 @@ const Carousel = () => {
             Your Study Abroad Partner
           </h1>
           <p className="text-sm md:text-base lg:text-lg text-gray-200">
-            Study Nexe welcomes you with the promise of competence, integrity, <br/>professionalism, ensuring your steppingstone is in the right direction.
+            StudyNex welcomes you with the promise of competence, integrity, <br/>professionalism, ensuring your steppingstone is in the right direction.
           </p>
           <a href="./Service.js" className="inline-block">
         <button className="px-4 py-2 sm:px-6 sm:py-3 bg-purple-700 hover:bg-purple-500 text-white rounded-lg font-semibold">

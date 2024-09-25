@@ -23,32 +23,15 @@ import servicesimage4 from './images/services logo 5.png';
 import servicesimage5 from './images/services logo 4.png';
 import gb from './images/gb.svg'
 import usvg from './images/us.svg';
-import uae from './images/uaetes.svg.png';
+import uae from './images/f.webp';
 import ausvg from './images/au.svg';
 import can from './images/ca.svg'
 import ceo from './images/ceoimage.jpeg'
 import Director from './images/director.jfif'
 import ContactSection from './footor'; // Ensure ContactSection is exported as default
 import Carousel from './carousel';
-
-const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
-  image12,
-  image13,
-  image14,
-  image15,
-  image16,
-];
+import './card.css'
+import Finland  from './images/filand.jpg'
 
 const LogoSlider = () => {
   
@@ -60,71 +43,78 @@ const LogoSlider = () => {
 <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn'>
   Study Abroad <span className='text-purple-700'>Consultants</span>
 </h1>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
-  {/* United Kingdom */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={gb} alt="United Kingdom" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">United Kingdom</h3>
-    <p className="text-gray-600 mt-2">The United Kingdom remains a premier destination for international students, hosting over 500,000+ students. Renowned for dynamic courses and integrated learning systems, the UK offers a rich educational experience.</p>
-    <a href="./uk.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
 
-  {/* United States */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={usvg} alt="United States" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">United States</h3>
-    <p className="text-gray-600 mt-2">The United States is known for its world-renowned universities, top-ranking institutions like MIT and diverse culture. The country's 4,000 accredited centers, including Ivy League and Harvard, make it a prime choice.</p>
-    <a href="./u.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
-
-  {/* Canada */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={can} alt="Canada" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">Canada</h3>
-    <p className="text-gray-600 mt-2">Canada is another top choice for global students, offers excellent education, high standard living, and working opportunities. Notably, three Canadian cities—Toronto, Vancouver, and Montreal—feature in the top 20 Best Student Cities.</p>
-    <a href="./Canada.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
-
-  {/* Australia */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={ausvg} alt="Australia" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">Australia</h3>
-    <p className="text-gray-600 mt-2">Australia, ranked as the 12th happiest country in the world (Prosperity Index), and has 37 top universities and out of those 37, six of them are in the prestigious top 100. This adds to its popularity as a favored study-abroad destination.</p>
-    <a href="./Australia.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
-
-  {/* United Arab Emirates */}
-  <div className="bg-white border border-purple-700 shadow-md p-6 rounded-lg text-center">
-    <img src={uae} alt="United Arab Emirates" className="w-full h-40 object-cover mx-auto mb-4 rounded-[35px]" />
-    <h3 className="text-lg font-semibold">United Arab Emirates</h3>
-    <p className="text-gray-600 mt-2">The UAE offers world-class education with advanced facilities, attracting students globally. Its universities provide diverse cultural experiences. Study in a dynamic, innovative environment.</p>
-    <a href="./UAE.js" className="text-purple-700 hover:text-purple-900 mt-4 inline-block">Learn More &rarr;</a>
-  </div>
-</div>
-
-<div>
-  <h1 className="text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-20 text-black animate-slideIn">Universities Around <span className="text-purple-700">The World</span></h1>
-</div>
-
-<div className="slider overflow-hidden relative mt-20">
-  <div className="slide-track flex space-x-4">
-    {/* Duplicate slides for seamless looping */}
-    {Array.from({ length: 14 }).map((_, index) => (
-      <div className="slide flex-shrink-0 w-40" key={index}>
-        <img
-          src={images[index % images.length]}
-          height="100"
-          width="250"
-          alt={`Slide ${index + 1}`}
-          className="w-full h-auto"
-        />
+   <div className="container">
+      <div className="card">
+        <img src={gb} alt="UK Flag" />
+        <h2>United Kingdom</h2>
+        <p>
+          The United Kingdom remains a premier destination for international
+          students, hosting over 500,000+ students. Renowned for dynamic courses
+          and integrated learning systems, the UK offers a rich educational
+          experience.
+        </p>
+        <a href="./uk.js">Learn More →</a>
       </div>
-    ))}
-  </div>
-</div>
+
+      <div className="card">
+        <img src={usvg} alt="US Flag" />
+        <h2>United States</h2>
+        <p>
+          The United States is known for its world-renowned universities,
+          top-ranking institutions like MIT and diverse culture. The country's
+          4,000 accredited centers, including Ivy League and Harvard, make it a
+          prime choice.
+        </p>
+        <a href="./u.js">Learn More →</a>
+      </div>
+
+      <div className="card">
+        <img src={can} alt="Canada Flag" />
+        <h2>Canada</h2>
+        <p>
+          Canada is another top choice for global students, offering excellent
+          education, high standards, and working opportunities. Three Canadian
+          cities feature in the top 20 Best Student Cities.
+        </p>
+        <a href="./Canada.js">Learn More →</a>
+      </div>
+
+      <div className="card">
+        <img src={ausvg} className='' alt="Australia Flag" />
+        <h2>Australia</h2>
+        <p>
+          Australia is ranked as the 12th happiest country in the world. It has
+          37 top universities and is a favored study-abroad destination.
+        </p>
+        <a href="./Australia.js">Learn More →</a>
+      </div>
+
+      <div className="card">
+        <img src={uae} alt="UAE Flag" />
+        <h2>United Arab Emirates</h2>
+        <p>
+          The UAE is a rising educational hub offering state-of-the-art
+          infrastructure and renowned universities attracting global students.
+        </p>
+        <a href="./UAE.js">Learn More →</a>
+      </div>
+
+      <div className="card">
+        <img src={Finland }alt="Germany Flag" />
+        <h2>Finland  </h2>
+        <p>
+        Finland   offers free or low-cost education for international students,
+          making it a top destination for studying abroad, especially in fields
+          like engineering.
+        </p>
+        <a href="./Finland.js">Learn More →</a>
+      </div>
+    </div>
+
  <div>
         <h1 className='text-3xl xl:text-5xl sm:text-2xl text-center mt-20 mb-18 text-black animate-slideIn '>Our  <span className=' text-purple-700'>Services</span> </h1>
-        <p className='text-center mt-5 '>From applying to a university to securing your study visa, Gohata Global is there for you</p>
+        <p className='text-center mt-5 '>From applying to a university to securing your study visa, StudyNex is there for you</p>
       </div>
       <div className="container mx-auto p-6">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:ml-52 lg:mt-20 gap-6">
@@ -169,44 +159,40 @@ const LogoSlider = () => {
 
   {/* CEO Section */}
   <div className="flex flex-col mt-10 md:flex-row items-center mb-12 w-full md:w-3/4">
-    <div className="w-40 h-40 md:w-64 md:h-52 mb-46 md:mb-0 md:mr-8">
-      <img
-        src={ceo}
-        alt="CEO"
-        className="object-cover rounded-full w-full h-full"
-      />
-    </div>
-    <div className="text-center md:text-left">
-      <h2 className="text-lg sm:text-xl font-bold">CEO</h2>
-      <h3 className="text-xl sm:text-2xl font-semibold mb-2">Hamaza</h3>
-      <p className="text-sm sm:mx-2  ml-8 mr-8 text-justify">
-  Our CEO, Hamaza, has been the guiding force behind our firm's success. His vision and leadership have inspired growth and innovation at every step. With his nurturing approach, Hamaza has not only built partnerships but also fostered trust and excellence.
-</p>
-
-
-    </div>
+  <div className="w-40 h-40 md:w-64 md:h-52 mb-4 md:mb-0 md:mr-8">
+    <img
+      src={ceo}
+      alt="CEO"
+      className="object-cover rounded-full w-full"
+    />
   </div>
-
-  {/* Director Section */}
-  <div className="flex flex-col md:flex-row mt-10 items-center w-full md:w-3/4">
-    <div className="w-40 h-40 md:w-64 md:h-52 rounded-full mb-4 md:mb-0 md:mr-8">
-      <img
-        src={Director}
-        alt="Director"
-        className="object-cover rounded-full w-full h-full"
-      />
-    </div>
-    <div className="text-center md:text-left">
-      <h2 className="text-lg sm:text-xl font-bold">Director</h2>
-      <h3 className="text-xl sm:text-2xl font-semibold mb-2">Hammad</h3>
-      <p className="text-sm sm: mx-2  ml-8 mr-8 text-justify">
-        Under the dynamic leadership of Director Hammad, our firm has scaled new
-        heights. With over 12 years of experience in the education sector,
-        Hammad has played a key role in expanding our reach and impact. His
-        efforts have been pivotal to our growth.
-      </p>
-    </div>
+  <div className="text-center md:text-left">
+    <h2 className="text-lg sm:text-xl font-bold">CEO</h2>
+    <h3 className="text-xl sm:text-2xl font-semibold mb-2">Hamaza</h3>
+    <p className="text-sm sm:text-base  text-justify">
+      Our CEO, Hamaza, has been the guiding force behind our firm's success. His vision and leadership have inspired growth and innovation at every step. With his nurturing approach, Hamaza has not only built partnerships but also fostered trust and excellence.
+    </p>
   </div>
+</div>
+
+{/* Director Section */}
+<div className="flex flex-col md:flex-row mt-10 items-center w-full md:w-3/4">
+  <div className="w-40 h-40 md:w-64 md:h-52 rounded-full mb-4 md:mb-0 md:mr-8">
+    <img
+      src={Director}
+      alt="Director"
+      className="object-cover rounded-full w-96 "
+    />
+  </div>
+  <div className="text-center md:text-left">
+    <h2 className="text-lg sm:text-xl font-bold">Director</h2>
+    <h3 className="text-xl sm:text-2xl font-semibold mb-2">Hammad</h3>
+    <p className="text-sm sm:text-base  text-justify">
+      Under the dynamic leadership of Director Hammad, our firm has scaled new heights. With over 12 years of experience in the education sector, Hammad has played a key role in expanding our reach and impact. His efforts have been pivotal to our growth.
+    </p>
+  </div>
+</div>
+
 </div>
 <ContactSection />
 

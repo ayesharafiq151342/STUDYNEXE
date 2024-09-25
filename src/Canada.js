@@ -1,8 +1,7 @@
 import React from "react";
 import bgimage from './images/canada-top.webp';
 import ContactSection  from "./footor";
-import botm from './images/ca-bottom.webp'
-const StudyInc = () => {
+const StudyInCanda = () => {
   return (
     <div className="bg-gray-50">
       {/* Header Section */}
@@ -12,7 +11,7 @@ const StudyInc = () => {
         <img
           src={bgimage}
           alt="Statue of Liberty"
-          className=" h-[400px] object-cover rounded  m-auto"
+          className="w-full h-[400px] object-cover rounded  m-auto"
         />
         <div className="absolute inset-0 "></div>
        
@@ -25,14 +24,17 @@ const StudyInc = () => {
           Study in <span className="text-purple-700 "> the Canada?</span> 
         </h2> <hr className="border-t-2 border-purple-700 mt-2 w-1/4 mx-auto"/>
         <p className="text-gray-700 text-base mt-6 leading-relaxed">
-        
-Canada offers a high quality of life with access to world-class healthcare and outdoor recreational activities Canada is a great option for Pakistani students interested in gaining a degree, making friendships, or exploring new cultures and experiences’ Many students apply to study in Canada from Pakistan. The Average Cost of University Tuition for  Undergraduate courses is around $36,100 per year while Graduate tuition averages $21,100 per year.         </p>
+          International students may find various excellent educational opportunities in the United Kingdom. For the 2019/2020 school year, the United Kingdom welcomed roughly 37,000 Pakistani students, as the Higher Education Statistics Agency reported. There are many benefits of studying in the Canada from Pakistan. Students who study in the Canada from Pakistan have several opportunities open to them, including access to top-tier educational institutions, exceptional faculty, and state-of-the-art research facilities.
+        </p>
         <p className="text-gray-700 text-base mt-4 leading-relaxed">
-        At M.R. Consultants we specialize in advising and supporting students throughout the study abroad process. Our comprehensive resources cover all aspects of studying in Australia, including payment and visa processes, scholarships, and living expenses. We’ll even provide insight into the Canadian education system, cultural norms, and student life in various cities. Make the transition to studying in Canada a smooth one with MR Consultants.    </p>
+          Undergraduate, master's, and doctoral degrees are offered across various disciplines at Canada universities. Average annual tuition for a British bachelor's degree may range from £13,000 to £26,000, with postgraduate degrees costing from £16,000 to £35,000. In the United Kingdom, the cost of living varies significantly from region to region, with London having one of the highest averages. A student's average cost of living is between £12,000 and £15,000.
+        </p>
         <p className="text-gray-700 text-base mt-4 leading-relaxed">
           MR Consultants is an excellent resource for Pakistani students interested in learning more about the costs of studying in the Canada. If you need help figuring out how to pay for your education in the United Kingdom, our team of seasoned advisors is here to help.
         </p>
-       
+        <p className="text-gray-700 text-base mt-4 leading-relaxed">
+          From deciding on a suitable school and program to laying the groundwork for a study visa in the Canada from Pakistan, our expert advisors are here to help you every step of the way. Are you ready to begin your study abroad adventure in the United Kingdom? Contact us immediately and let MR Consultants assist you with every step of your study in the Canada from Pakistan.
+        </p>
       </div>
       <div className="max-w-4xl mx-auto text-center mt-20">
         <h2 className="text-black font-bold text-2xl md:text-3xl">
@@ -65,7 +67,7 @@ Canada offers a high quality of life with access to world-class healthcare and o
       <section
   className="relative h-[700px] bg-cover bg-center"
   style={{
-    backgroundImage: `url(${botm})`,
+    backgroundImage: `url(${bgimage})`,
     backgroundAttachment: 'fixed', // Keeps the image fixed during scroll
     backgroundSize: 'cover', // Ensures the image covers the entire section
     backgroundPosition: 'center', // Centers the background image
@@ -87,7 +89,6 @@ Canada offers a high quality of life with access to world-class healthcare and o
     </div>
   </div>
 </section>
-
       <ContactSection />
   
     </div>
@@ -95,4 +96,4 @@ Canada offers a high quality of life with access to world-class healthcare and o
   );
 };
 
-export default StudyInc;
+export default StudyInCanda;

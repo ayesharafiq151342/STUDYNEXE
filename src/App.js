@@ -10,13 +10,13 @@ import Addmissionprocess from "./Adm_Pro.js";
 import InterviewPreparation from "./inter_p.js";
 import ScholarshipProcess from "./scholar_app.js";
 import VisaApplication from "./v_a.js";
+import StudyInUS from "./u.js";
 import StudyInUK from "./uk.js";
-import StudyInc from "./Canada.js";
-import StudyInUSA from "./u.js";
+import StudyInCanda from "./Canada.js";
+import Land from "./Fi_land.js"
 import StudyInAUS from "./Australia.js";
 import StudyInUAE from "./UAE.js";
-import ContactForm from './Contact.js'
-
+import ContactForm from "./Contact.js";
 const Layout = () => (
   <>
     <Navbar /> {/* Navbar will be rendered on all pages */}
@@ -41,15 +41,18 @@ const router = createBrowserRouter([
   { path: "/scholar_app.js", element: <ScholarshipProcess /> },
   { path: "/inter_p.js", element: <InterviewPreparation /> },
   { path: "/v_a.js", element: <VisaApplication /> },
-  { path: "/uk.js", element: <StudyInUK /> },
-  { path: "/Canada.js", element: <StudyInc /> },
-  { path: "/u.js", element: <StudyInUSA /> },
+
+{ path: "/uk.js", element: <StudyInUK /> },
+{ path: "/u.js", element: <StudyInUS /> },
+ 
+  
+  { path: "/Canada.js", element: <StudyInCanda /> },
   { path: "/Australia.js", element: <StudyInAUS /> },
   { path: "/UAE.js", element: <StudyInUAE /> },
 
+  { path: "/Fi_land.js", element: <Land /> },
+
   { path: "/Contact.js", element: <ContactForm /> },
-
-
 
 
 

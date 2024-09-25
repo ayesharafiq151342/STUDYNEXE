@@ -7,36 +7,12 @@ import bgimage from './images/page-title.jpg'
 import image1 from './images/process-1-263x263.jpg'; // Replace with your images
 import image2 from './images/process-2-263x263.jpg';
 import image3 from './images/process-3-263x263.jpg';
-import image4 from './images/h5-1.svg'
-import image5 from './images/h5-2.svg'
-import image6 from './images/h5-3.svg'
-import image7 from './images/h5-4.svg'
+
 import ContactSection from './footor'
 
 
 const MissionAboutUs = () => {
-  const features = [
-    {
-      id: 1,
-      title: "Learn with Experts",
-      icon: image4, // Path to your image
-    },
-    {
-      id: 2,
-      title: "Learn Anything",
-      icon: image5, // Path to another image
-    },
-    {
-      id: 3,
-      title: "Flexible Learning",
-      icon: image6, // Path to another image
-    },
-    {
-      id: 3,
-      title: "Industrial Standart",
-      icon: image7, // Path to another image
-    },
-  ];
+ 
 
   return (<>
 
@@ -73,7 +49,7 @@ const MissionAboutUs = () => {
             ABOUT <span className='text-purple-700' >US</span>
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            Team StudyNex believes “every student matters.” This promise drives us in our goal to help you achieve your dreams. We are spread all over Pakistan with our vast network of branches and a dedicated team of counselors who ensure that you have access to the best quality education consultancy. We cater to every study destination on the map, and our panel boasts a wide range of top-tier foreign universities. Our impeccable track record has helped students attend their dream universities.
+            Team StudyNex believes “every student matters. StudyNex is the best pakistan education consultancy firm.  We cater to every study destination on the map, and our panel boasts a wide range of top-tier foreign universities. Our impeccable track record has helped students attend their dream universities.
 
           </p>
         </div>
@@ -107,7 +83,7 @@ const MissionAboutUs = () => {
           <p className="mt-4 text-lg text-gray-500">
 
 
-            "At StudyNex, our vision is to empower students to reach their full potential by providing unparalleled access to global education opportunities. We strive to open doors to premier foreign institutions, guiding students to careers that match their passions and strengths, ultimately shaping a future where every student's aspirations are realized."    </p>
+            At StudyNex, our vision is to empower students to reach their full potential by providing unparalleled access to global education opportunities. We strive to open doors to premier foreign institutions, guiding students to careers that match their passions and strengths, ultimately shaping a future where every student's aspirations are realized.    </p>
         </div>
       </div>
     </div><div className="container mx-auto px-4 py-12">
